@@ -10,5 +10,7 @@ namespace Ragnarok.DuelCards.FanGame.Domain.Entities
         public int Defense { get; set; }
         public bool IsBuff { get; set; }
         public Buff Buff { get; set; }
-    }
+
+        public List<PlayerCard> PlayerCards { get; set; }
+    } 
 }
