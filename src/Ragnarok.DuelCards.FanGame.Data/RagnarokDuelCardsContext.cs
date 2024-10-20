@@ -18,6 +18,7 @@ namespace Ragnarok.DuelCards.FanGame.Data
         public DbSet<PlayerCard> PlayerCards { get; set; }
         public DbSet<Card> Cards { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(RagnarokDuelCardsContext).Assembly);
