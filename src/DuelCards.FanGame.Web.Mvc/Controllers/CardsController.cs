@@ -27,5 +27,7 @@ namespace DuelCards.FanGame.Web.Mvc.Controllers
             var card = await _db.Set<Card>().FindAsync(id);
             return View(card);
         }
+
+
     }
 }
