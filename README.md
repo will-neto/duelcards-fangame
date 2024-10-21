@@ -1,1 +1,1 @@
-# Ragnarok.DuelCards.FanGame
+# DuelCards.FanGame
