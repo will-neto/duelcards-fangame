@@ -28,6 +28,10 @@ namespace DuelCards.FanGame.Data.Configurations
 
             builder.Property(p => p.Buff)
                 .IsRequired();
+
+            builder.HasOne(c => c.CardCollection)
+                .WithMany(cc => cc.Cards)
+                .HasForeignKey(c => c.CardCollectionId);
         }
     }
 }

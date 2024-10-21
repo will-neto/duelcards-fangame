@@ -2,7 +2,7 @@
 
 namespace DuelCards.FanGame.Domain.Entities
 {
-    public class Card : DuelCards
+    public class Card : Entity
     {
         public string Name { get; set; } = null!;
         public Element Element { get; set; } = Element.Undefined;
@@ -11,6 +11,10 @@ namespace DuelCards.FanGame.Domain.Entities
         public bool IsBuff { get; set; }
         public Buff Buff { get; set; }
 
+        public Guid CardCollectionId { get; set; }
+        public CardCollection CardCollection { get; set; }
+
         public List<PlayerCard> PlayerCards { get; set; }
-    } 
+        public List<Tag> Tags { get; set; }
+    }
 }

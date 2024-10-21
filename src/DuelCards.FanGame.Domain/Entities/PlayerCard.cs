@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DuelCards.FanGame.Domain.Entities
 {
-    public class PlayerCard : DuelCards
+    public class PlayerCard : Entity
     {
         public Guid PlayerId { get; set; }
         public Guid CardId { get; set; }
