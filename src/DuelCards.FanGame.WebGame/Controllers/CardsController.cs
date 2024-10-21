@@ -3,7 +3,7 @@ using DuelCards.FanGame.Data;
 using DuelCards.FanGame.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DuelCards.FanGame.Web.Mvc.Controllers
+namespace DuelCards.FanGame.WebGame.Controllers
 {
     [Route("cards")]
     public class CardsController : Controller

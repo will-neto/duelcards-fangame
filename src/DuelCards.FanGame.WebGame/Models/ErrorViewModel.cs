@@ -1,4 +1,4 @@
-namespace DuelCards.FanGame.Web.Mvc.Models
+namespace DuelCards.FanGame.WebGame.Models
 {
     public class ErrorViewModel
     {

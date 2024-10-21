@@ -1,7 +1,7 @@
 using DuelCards.FanGame.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace DuelCards.FanGame.Web.Mvc
+namespace DuelCards.FanGame.WebGame
 {
     public class Program
     {
