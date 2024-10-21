@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Ragnarok.DuelCards.FanGame.Data;
 using Ragnarok.DuelCards.FanGame.Domain.Entities;
-using Ragnarok.DuelCards.FanGame.Domain.Enum;
 
 namespace Ragnarok.DuelCards.FanGame.Web.Mvc.Controllers
 {
@@ -15,9 +14,18 @@ namespace Ragnarok.DuelCards.FanGame.Web.Mvc.Controllers
             _db = db;
         }
 
+        [HttpGet("")]
         public async Task<IActionResult> Index()
         {
-            return View(await _db.Set<Card>().ToListAsync());
+            var cards = await _db.Set<Card>().ToListAsync();
+            return View(cards);
+        }
+
+        [HttpGet("edit/{id:guid}")]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var card = await _db.Set<Card>().FindAsync(id);
+            return View(card);
         }
     }
 }
